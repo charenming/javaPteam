@@ -17,6 +17,14 @@
     <script src="js/script.js"></script>
 
     <!--폰트-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -29,7 +37,8 @@
       integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
       crossorigin="anonymous"
     />
-    <link rel="shortcut icon" href="images/favicon.ico" />
+    <!-- <link rel="shortcut icon" href="images/favicon.ico" /> -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
     <title>자바펜션 | 영종도을왕리</title>
   </head>
 
@@ -48,17 +57,21 @@
             <li><a href="gnb/tour.html">여행</a></li>
             <li><a href="gnb/qna.html">문의</a></li>
           </ul>
-          <div class="liveReservation">
-            <a href="gnb/reservation.html"
-              ><i class="far fa-paper-plane">　실시간예약</i></a
-            >
-          </div>
+          <ul class="liveReservation">
+            <li>
+              <a href="gnb/calendar.html"
+                ><i class="far fa-paper-plane">　실시간예약</i></a
+              >
+              <ul class="rsSubMenu">
+                <li><a href="gnb/reservation.html">예약하기</a></li>
+                <li><a href="gnb/reservationcheck.html">예약확인</a></li>
+              </ul>
+            </li>
+          </ul>
         </div>
         <div class="appGnb">
           <div class="appReservation">
-            <a href="gnb/reservation.html"
-              ><i class="far fa-paper-plane"></i
-            ></a>
+            <a href="gnb/calendar.html"><i class="far fa-paper-plane"></i></a>
           </div>
           <div class="appLogo">
             <a href="index.html"><img src="images/logo.png" alt="logo" /></a>

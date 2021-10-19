@@ -6,7 +6,13 @@
   box-sizing: border-box;
 }
 
-body {
+body,
+ul,
+li,
+p,
+i,
+a,
+h1 {
   font-family: "Nanum Gothic", sans-serif;
 }
 

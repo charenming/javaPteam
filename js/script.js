@@ -4,10 +4,10 @@ $(function () {
     var y = $(this).scrollTop();
     if (y > 120) {
       $(".header").addClass("gnbBg");
-      $(".gnb>li>a,.liveReservation>a>i").addClass("gnbColor");
+      $(".gnb>li>a,.liveReservation>li>a>i").addClass("gnbColor");
     } else {
       $(".header").removeClass("gnbBg");
-      $(".gnb>li>a,.liveReservation>a>i").removeClass("gnbColor");
+      $(".gnb>li>a,.liveReservation>li>a>i").removeClass("gnbColor");
     }
   });
 
@@ -38,6 +38,13 @@ $(function () {
   });
   $(".toggleGnb>li").mouseleave(function () {
     $(".subMenu").stop().slideUp();
+  });
+
+  $(".liveReservation>li").mouseover(function () {
+    $(".rsSubMenu").stop().slideDown();
+  });
+  $(".liveReservation>li").mouseleave(function () {
+    $(".rsSubMenu").stop().slideUp();
   });
 });
 
