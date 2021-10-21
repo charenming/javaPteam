@@ -46,6 +46,13 @@ $(function () {
   $(".liveReservation>li").mouseleave(function () {
     $(".rsSubMenu").stop().slideUp();
   });
+
+  $(".liveReservationTab>li").mouseover(function () {
+    $(".rsSubMenu").stop().slideDown();
+  });
+  $(".liveReservationTab>li").mouseleave(function () {
+    $(".rsSubMenu").stop().slideUp();
+  });
 });
 
 // space

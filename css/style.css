@@ -96,20 +96,20 @@ header {
   position: absolute;
   top: 80px;
   /* right: 500px; */
-  right: 400px;
+  right: 500px;
   display: none;
   z-index: 9999;
 }
 
 .rsSubMenu > li {
-  background-color: rgb(241, 237, 232);
+  background-color: rgb(214, 204, 192);
   width: 200px;
   padding: 5px;
   line-height: 40px;
   text-align: center;
 }
 .rsSubMenu > li:hover {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(245, 240, 234);
 }
 .rsSubMenu > li > a {
   color: #333;
@@ -428,12 +428,22 @@ main {
   max-width: 1200px;
 }
 
+.yearMonth {
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 #contents {
 }
 
+.left,
+.right {
+  width: 30px;
+  height: 30px;
+}
 .contentsTitle {
-  padding: 50px;
-  text-align: center;
+  padding: 12px 15px 0 15px;
   font-size: 30px;
 }
 
@@ -443,7 +453,6 @@ main {
 }
 
 .gone {
-  color: #777;
   height: 50px;
 }
 
@@ -505,6 +514,8 @@ main {
   padding: 5px;
 }
 
+.room > a {
+}
 .sun {
   color: red;
 }
@@ -543,6 +554,30 @@ th:last-child {
   height: 20px;
 }
 
+/*reservationcheck page reservationcheck page*/
+.PersonalData {
+  margin: 100px auto;
+  width: 330px;
+}
+
+.dataName > span,
+.dataPhone > span {
+  float: left;
+  margin: 5px;
+  font-size: 18px;
+}
+.dataName > input,
+.dataPhone > input {
+  float: right;
+  margin: 5px;
+  font-size: 18px;
+}
+
+.submit {
+  padding: 5px;
+  margin: 10px 150px;
+  width: 60px;
+}
 /*모바일 + 공통*/
 /*모바일 + 공통*/
 /*모바일 + 공통*/
