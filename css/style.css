@@ -166,106 +166,6 @@ header {
   color: #fff;
 }
 
-/* calendar calender calendar */
-
-main {
-  padding: 100px 0;
-  margin: 0 auto;
-  max-width: 1200px;
-}
-
-#contents {
-}
-
-.contentsTitle {
-  padding: 50px;
-  text-align: center;
-  font-size: 30px;
-}
-
-.weeks,
-.dayBox {
-  height: 100px;
-}
-
-.gone,
-.date {
-  color: #777;
-  height: 50px;
-}
-
-.stationInfo {
-  display: flex;
-  justify-content: space-between;
-  width: 1200px;
-}
-
-.station {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
-}
-
-.station > li {
-  line-height: 20px;
-  font-size: 15px;
-  margin: 10px;
-  line-height: 15px;
-  align-items: center;
-}
-
-.station > li > img {
-  width: 20px;
-  height: 20px;
-  align-items: center;
-}
-
-.showPay {
-  cursor: pointer;
-}
-.showPay > p {
-  border: 1px solid rgb(229, 229, 229);
-  padding: 5px;
-}
-
-.calendar {
-}
-.calendarTable {
-  border: 1px solid rgb(229, 229, 229);
-  width: 1200px;
-}
-
-.weeksTitle {
-  border: 1px solid rgb(229, 229, 229);
-}
-
-.room {
-  padding: 5px;
-}
-
-.sun {
-  color: red;
-}
-
-.sat {
-  color: skyblue;
-}
-
-.calendarTable > thead {
-}
-.weeksTitle > th {
-  width: 200px;
-  padding: 10px 0;
-}
-
-.weeks > td {
-  padding: 10px;
-}
-
-.enable > img {
-  width: 20px;
-  height: 20px;
-}
 /*visual end*/
 
 /*footer start*/
@@ -520,6 +420,67 @@ footer {
 }
 
 /*reservation*/
+/* calendar calender calendar */
+
+main {
+  padding: 100px 0;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+#contents {
+}
+
+.contentsTitle {
+  padding: 50px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.weeks,
+.dayBox {
+  height: 100px;
+}
+
+.gone {
+  color: #777;
+  height: 50px;
+}
+
+.stationInfo {
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+}
+
+.station {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.station > li {
+  line-height: 20px;
+  font-size: 15px;
+  margin: 10px;
+  line-height: 15px;
+  align-items: center;
+}
+
+.station > li > img {
+  width: 20px;
+  height: 20px;
+  align-items: center;
+}
+
+.showPay {
+  cursor: pointer;
+}
+.showPay > p {
+  border: 1px solid rgb(229, 229, 229);
+  padding: 5px;
+}
+
 #calender {
   max-width: 1200px;
   max-height: 500px;
@@ -527,8 +488,59 @@ footer {
 }
 .date {
   padding: 100px 0;
-  color: #333;
+  color: #777;
   height: 500px;
+}
+
+.calendarTable {
+  border: 1px solid rgb(229, 229, 229);
+  width: 1200px;
+}
+
+.weeksTitle {
+  border: 1px solid rgb(229, 229, 229);
+}
+
+.room {
+  padding: 5px;
+}
+
+.sun {
+  color: red;
+}
+
+.sat {
+  color: skyblue;
+}
+
+.calendarTable > thead {
+}
+.weeksTitle > th {
+  width: 200px;
+  padding: 10px 0;
+}
+
+tr,
+td {
+  border-top: 1px solid rgb(229, 229, 229);
+  border-right: 1px solid rgb(229, 229, 229);
+}
+
+th {
+  border-right: 1px solid rgb(229, 229, 229);
+}
+tr:last-child,
+td:last-child,
+th:last-child {
+  border-right: 0;
+}
+.weeks > td {
+  padding: 10px;
+}
+
+.enable > img {
+  width: 20px;
+  height: 20px;
 }
 
 /*모바일 + 공통*/
