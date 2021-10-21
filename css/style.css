@@ -90,7 +90,7 @@ header {
   position: relative;
   box-sizing: border-box;
   color: #fff;
-  }
+}
 
 .rsSubMenu {
   position: absolute;
@@ -166,6 +166,69 @@ header {
   color: #fff;
 }
 
+/* calendar calender calendar */
+
+main {
+  padding: 100px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+#contents {
+  display: block;
+}
+
+.contentsTitle {
+  padding: 50px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.weeks {
+  height: 100px;
+}
+
+.gone {
+  color: #777;
+}
+
+.stationInfo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.station {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.station > li {
+  line-height: 20px;
+  font-size: 15px;
+  margin: 10px;
+  line-height: 15px;
+}
+
+.station > li > img {
+  width: 30px;
+  height: 30px;
+}
+
+.showPay {
+}
+.showPay > p {
+  border: 1px solid rgb(229, 229, 229);
+  padding: 5px;
+  cursor: pointer;
+}
+
+.calendarTable {
+  border: 1px solid rgb(229, 229, 229);
+}
+.weeksTitle > th {
+  width: 200px;
+}
 /*visual end*/
 
 /*footer start*/
