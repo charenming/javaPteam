@@ -57,10 +57,29 @@ $(function () {
 
 //selectNotice
 $(function () {
-  $(".viewMore").onclick(function () {
-    $(".selectNotice").stop().show();
+  $(".viewMore").click(function () {
+    $(".selectNotice").show();
+    $(".viewMore").hide();
+    $(".viewStop").show();
+  });
+  $(".viewStop").click(function () {
+    $(".selectNotice").hide();
+    $(".viewStop").hide();
+    $(".viewMore").show();
   });
 });
+
+// 예약하기 성인 인원 버튼
+function count(type) {
+  const resultElement = document.getElementById("result");
+  let number = resultElement.innerText;
+  if (type === "plus") {
+    number = parseInt(number) + 1;
+  } else if (type === "minus") {
+    number = parseInt(number) - 1;
+  }
+  resultElement.innerText = number;
+}
 
 // space
 $(function () {

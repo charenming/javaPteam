@@ -474,7 +474,6 @@ main {
 }
 .weeks,
 .dayBox {
-  padding-bottom: 100px;
 }
 
 .gone {
@@ -498,7 +497,9 @@ main {
 }
 .date {
   color: #777;
-  text-align: top;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
 }
 
 .calendarTable {
@@ -559,7 +560,8 @@ th:last-child {
 
 .selectDay {
   max-width: 1200px;
-  height: 800px;
+  min-height: 600px;
+  max-height: 1100px;
 }
 .selectCalendar {
   max-width: 600px;
@@ -567,13 +569,40 @@ th:last-child {
 }
 
 .selectInfo {
-  max-width: 600px;
+  width: 600px;
   float: right;
+  padding: 0 50px;
+  line-height: 1.8;
 }
 
 .selectNotice {
   display: none;
+  max-width: 600px;
+  float: right;
+  line-height: 1.8;
 }
+
+.viewMore {
+  width: 70px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid rgb(229, 229, 229);
+  cursor: pointer;
+  float: right;
+  text-align: center;
+}
+
+.viewStop {
+  width: 60px;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid rgb(229, 229, 229);
+  cursor: pointer;
+  display: none;
+  float: right;
+  text-align: center;
+}
+
 .roomSelect {
   height: 800px;
 }
@@ -582,6 +611,40 @@ th:last-child {
 }
 .ageStandard > span {
   font-weight: normal;
+}
+
+.roomSelectTable {
+}
+
+.roomTitle {
+}
+.select {
+  width: 50px;
+}
+.roomImg {
+  width: 200px;
+}
+.roomImg > img {
+  width: 200px;
+  height: 100px;
+}
+
+.roomType {
+  width: 200px;
+}
+.type1 {
+  color: #777;
+}
+.type3 {
+  font-size: 12px;
+}
+
+.dayNight,
+.adult,
+.child,
+.infant,
+.pay {
+  width: 150px;
 }
 
 /*reservationcheck page reservationcheck page*/
@@ -608,6 +671,27 @@ th:last-child {
   margin: 10px 150px;
   width: 60px;
 }
+
+/*reservation footer reservation foter footer*/
+/* .rsFooter {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.infoJava {
+  width: 400px;
+  float: left;
+}
+.infoTitle {
+  line-height: 2;
+}
+.infoTitle > span {
+  font-weight: bold;
+}
+
+.infoPay {
+  width: 400px;
+  float: right;
+} */
 /*모바일 + 공통*/
 /*모바일 + 공통*/
 /*모바일 + 공통*/
