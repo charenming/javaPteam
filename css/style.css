@@ -447,15 +447,6 @@ main {
   font-size: 30px;
 }
 
-.weeks,
-.dayBox {
-  height: 100px;
-}
-
-.gone {
-  height: 50px;
-}
-
 .stationInfo {
   display: flex;
   justify-content: space-between;
@@ -479,9 +470,16 @@ main {
 .station > li > img {
   width: 20px;
   height: 20px;
-  align-items: center;
+  vertical-align: text-bottom;
+}
+.weeks,
+.dayBox {
+  padding-bottom: 100px;
 }
 
+.gone {
+  height: 50px;
+}
 .showPay {
   cursor: pointer;
 }
@@ -495,10 +493,11 @@ main {
   max-height: 500px;
   margin: 0 auto;
 }
+
+.dayBox {
+}
 .date {
-  padding: 100px 0;
   color: #777;
-  height: 500px;
 }
 
 .calendarTable {
@@ -552,6 +551,7 @@ th:last-child {
 .enable > img {
   width: 20px;
   height: 20px;
+  vertical-align: text-bottom;
 }
 
 /*reservationcheck page reservationcheck page*/
