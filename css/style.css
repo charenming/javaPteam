@@ -620,6 +620,7 @@ th:last-child {
 }
 .select {
   width: 50px;
+  text-align: center;
 }
 .roomImg {
   width: 200px;
@@ -631,6 +632,7 @@ th:last-child {
 
 .roomType {
   width: 200px;
+  line-height: 1.5;
 }
 .type1 {
   color: #777;
@@ -645,6 +647,15 @@ th:last-child {
 .infant,
 .pay {
   width: 150px;
+  text-align: center;
+}
+
+.child > p,
+.infant > p {
+  width: 80px;
+  background-color: rgb(229, 229, 229);
+  color: rgb(158, 158, 158);
+  margin: 0 auto;
 }
 
 /*reservationcheck page reservationcheck page*/
