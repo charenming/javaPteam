@@ -498,11 +498,12 @@ main {
 }
 .date {
   color: #777;
+  text-align: top;
 }
 
 .calendarTable {
   border: 1px solid rgb(229, 229, 229);
-  width: 1200px;
+  max-width: 1200px;
 }
 
 .weeksTitle {
@@ -552,6 +553,35 @@ th:last-child {
   width: 20px;
   height: 20px;
   vertical-align: text-bottom;
+}
+
+/* reservation reservation reservation */
+
+.selectDay {
+  max-width: 1200px;
+  height: 800px;
+}
+.selectCalendar {
+  max-width: 600px;
+  float: left;
+}
+
+.selectInfo {
+  max-width: 600px;
+  float: right;
+}
+
+.selectNotice {
+  display: none;
+}
+.roomSelect {
+  height: 800px;
+}
+.ageStandard {
+  float: right;
+}
+.ageStandard > span {
+  font-weight: normal;
 }
 
 /*reservationcheck page reservationcheck page*/

@@ -55,6 +55,13 @@ $(function () {
   });
 });
 
+//selectNotice
+$(function () {
+  $(".viewMore").onclick(function () {
+    $(".selectNotice").stop().show();
+  });
+});
+
 // space
 $(function () {
   //밑에 점 버튼
