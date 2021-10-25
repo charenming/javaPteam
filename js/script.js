@@ -5,9 +5,13 @@ $(function () {
     if (y > 120) {
       $(".header").addClass("gnbBg");
       $(".gnb>li>a,.liveReservation>li>a>i").addClass("gnbColor");
+      $(".logo").css("display", "none");
+      $(".logoBlack").css("display", "block");
     } else {
       $(".header").removeClass("gnbBg");
       $(".gnb>li>a,.liveReservation>li>a>i").removeClass("gnbColor");
+      $(".logoBlack").css("display", "none");
+      $(".logo").css("display", "block");
     }
   });
 

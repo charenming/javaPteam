@@ -123,7 +123,9 @@ header {
 .liveReservation > li > a > i.gnbColor {
   color: #333;
 }
-
+.logoBlack {
+  display: none;
+}
 /*visual start*/
 #visual {
 }
