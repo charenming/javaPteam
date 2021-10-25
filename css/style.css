@@ -1,4 +1,5 @@
 @charset "utf-8";
+/*Calendar*/
 /*pc*/
 #wrap {
   margin: 0 auto;
@@ -559,17 +560,17 @@ th:last-child {
 /* reservation reservation reservation */
 
 .selectDay {
+  overflow: auto;
   max-width: 1200px;
   min-height: 600px;
-  max-height: 1100px;
 }
 .selectCalendar {
-  max-width: 600px;
+  max-width: 49%;
   float: left;
 }
 
 .selectInfo {
-  width: 600px;
+  max-width: 49%;
   float: right;
   padding: 0 50px;
   line-height: 1.8;
@@ -628,12 +629,22 @@ th:last-child {
 .roomImg > img {
   width: 200px;
   height: 100px;
+  padding: 10px 2px 0 0;
 }
 
+.plus {
+  padding: 2px;
+  cursor: pointer;
+}
+.minus {
+  padding: 4px;
+  cursor: pointer;
+}
 .roomType {
   width: 200px;
   line-height: 1.5;
 }
+
 .type1 {
   color: #777;
 }
@@ -683,26 +694,6 @@ th:last-child {
   width: 60px;
 }
 
-/*reservation footer reservation foter footer*/
-/* .rsFooter {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-.infoJava {
-  width: 400px;
-  float: left;
-}
-.infoTitle {
-  line-height: 2;
-}
-.infoTitle > span {
-  font-weight: bold;
-}
-
-.infoPay {
-  width: 400px;
-  float: right;
-} */
 /*모바일 + 공통*/
 /*모바일 + 공통*/
 /*모바일 + 공통*/

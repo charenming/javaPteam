@@ -244,7 +244,7 @@
                 [ 구매 후 예약 상황에 따라 예약 불가 및 예약 취소가 될 수
                 있습니다.<br />
                 구매 후 반드시 펜션으로 예약 확정 여부 확인을 부탁드립니다.<br />
-                (이로 인한 사유로 인한 취소 시, 예약 당일이라도 100% 환불이
+                (해당 사유로 인한 취소 시, 예약 당일이라도 100% 환불이
                 가능하며,<br />
                 그 외 보상은 불가하오니 반드시 예약 확정 여부 확인을
                 부탁드립니다. ]
@@ -257,8 +257,8 @@
         <section class="roomSelect">
           <h2>객실선택</h2>
           <h4 class="ageStandard">
-            나이기준　<span
-              >성인 (만 19세 이상) 아동 (이용불가) 유아(이용불가)</span
+            나이기준　<span>
+              성인 (만 19세 이상) 아동 (이용불가) 유아(이용불가)</span
             >
           </h4>
           <br /><br />
@@ -282,7 +282,7 @@
                   <input type="checkbox" id="cb1" /> <label for="cb1"></label>
                 </td>
                 <td class="roomImg">
-                  <img src="../images/공간/room2_01.png" alt="roomImg" />
+                  <img src="../images/공간/room1_01.png" alt="roomImg" />
                 </td>
                 <td class="roomType">
                   <h4>자바1</h4>
@@ -292,9 +292,19 @@
                 </td>
                 <td class="dayNight"></td>
                 <td class="adult">
-                  <input type="button" onclick='count("plus")' value="+" />
-                  <div id="result">0</div>
-                  <input type="button" onclick='count("minus")' value="-" />
+                  <input
+                    type="button"
+                    onclick='count("plus")'
+                    value="+"
+                    class="plus"
+                  />
+                  <div id="result" min="0">0</div>
+                  <input
+                    type="button"
+                    onclick='count("minus")'
+                    value="-"
+                    class="minus"
+                  />
                 </td>
                 <td class="child"><p>이용불가</p></td>
                 <td class="infant"><p>이용불가</p></td>
@@ -315,9 +325,19 @@
                 </td>
                 <td class="dayNight"></td>
                 <td class="adult">
-                  <input type="button" onclick='count("plus")' value="+" />
+                  <input
+                    type="button"
+                    onclick='count("plus")'
+                    value="+"
+                    class="plus"
+                  />
                   <div id="result">0</div>
-                  <input type="button" onclick='count("minus")' value="-" />
+                  <input
+                    type="button"
+                    onclick='count("minus")'
+                    value="-"
+                    class="minus"
+                  />
                 </td>
                 <td class="child"><p>이용불가</p></td>
                 <td class="infant"><p>이용불가</p></td>
@@ -328,7 +348,7 @@
                   <input type="checkbox" id="cb1" /> <label for="cb1"></label>
                 </td>
                 <td class="roomImg">
-                  <img src="../images/공간/room2_01.png" alt="roomImg" />
+                  <img src="../images/공간/room3_01.png" alt="roomImg" />
                 </td>
                 <td class="roomType">
                   <h4>자바3</h4>
@@ -338,9 +358,19 @@
                 </td>
                 <td class="dayNight"></td>
                 <td class="adult">
-                  <input type="button" onclick='count("plus")' value="+" />
+                  <input
+                    type="button"
+                    onclick='count("plus")'
+                    value="+"
+                    class="plus"
+                  />
                   <div id="result">0</div>
-                  <input type="button" onclick='count("minus")' value="-" />
+                  <input
+                    type="button"
+                    onclick='count("minus")'
+                    value="-"
+                    class="minus"
+                  />
                 </td>
                 <td class="child"><p>이용불가</p></td>
                 <td class="infant"><p>이용불가</p></td>
@@ -351,7 +381,7 @@
                   <input type="checkbox" id="cb1" /> <label for="cb1"></label>
                 </td>
                 <td class="roomImg">
-                  <img src="../images/공간/room2_01.png" alt="roomImg" />
+                  <img src="../images/공간/room4_01.png" alt="roomImg" />
                 </td>
                 <td class="roomType">
                   <h4>자바5</h4>
@@ -361,9 +391,19 @@
                 </td>
                 <td class="dayNight"></td>
                 <td class="adult">
-                  <input type="button" onclick='count("plus")' value="+" />
+                  <input
+                    type="button"
+                    onclick='count("plus")'
+                    value="+"
+                    class="plus"
+                  />
                   <div id="result">0</div>
-                  <input type="button" onclick='count("minus")' value="-" />
+                  <input
+                    type="button"
+                    onclick='count("minus")'
+                    value="-"
+                    class="minus"
+                  />
                 </td>
                 <td class="child"><p>이용불가</p></td>
                 <td class="infant"><p>이용불가</p></td>
@@ -371,6 +411,7 @@
               </tr>
             </tbody>
           </table>
+          <hr />
         </section>
       </main>
       <!--footer start-->
@@ -404,59 +445,6 @@
             <p><span>입금계좌</span> 티아이(에스은행) 123-45-67891-0</p>
           </div>
         </div>
-
-        <!-- <div class="rsFooter">
-          <div class="infoJava">
-            <h3>숙박업체정보</h3>
-            <p class="infoTitle">
-              <span>사업자명</span>
-              자바펜션
-            </p>
-            <p class="infoTitle">
-              <span>사업자등록번호</span>
-              123-45-67899
-            </p>
-            <p class="infoTitle">
-              <span>주소지</span>
-              인천광역시 중구
-            </p>
-            <p class="infoTitle">
-              <span>대표</span>
-              TIS
-            </p>
-            <p class="infoTitle">
-              <span>문의</span>
-              010-1234-5678
-            </p>
-          </div>
-        </div>
-        <div class="infoPay">
-          <h3>결제대행사 정보</h3>
-          <p class="infoTitle">
-            <span>대표</span>
-            이상엽
-          </p>
-          <p class="infoTitle">
-            <span>상호명</span>
-            (주)노붐
-          </p>
-          <p class="infoTitle">
-            <span>사업자등록번호</span>
-            123-45-67890
-          </p>
-          <p class="infoTitle">
-            <span>주소지</span>
-            서울특별시 영등포구
-          </p>
-          <p class="infoTitle">
-            <span>통신판매업신고</span>
-            제2021-서울영등포-00001호
-          </p>
-          <p class="infoTitle">
-            <span>이메일</span>
-            bomb@tis.go.kr
-          </p>
-        </div> -->
       </footer>
     </div>
   </body>
