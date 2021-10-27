@@ -425,6 +425,10 @@ footer {
 /*reservation*/
 /* calendar calender calendar */
 
+.reservationCheck {
+  display: none;
+}
+
 main {
   padding: 100px 0;
   margin: 0 auto;
@@ -654,7 +658,7 @@ th:last-child {
   font-size: 12px;
 }
 
-.dayNight,
+.period,
 .adult,
 .child,
 .infant,
@@ -761,6 +765,10 @@ th:last-child {
   .appReservation > a > i,
   .toggle > li > i {
     color: #fff;
+  }
+
+  .appReservationGnb > a > i {
+    color: #333;
   }
   .appLogo,
   .logo {
@@ -1121,5 +1129,39 @@ th:last-child {
   .serviceTxt06 {
     grid-column: 1/2;
     grid-row: 12/13;
+  }
+
+  /* reservation reservation reservation */
+
+  .check {
+    height: 50px;
+    max-width: 570px;
+  }
+  .reservationCheck {
+    max-width: 570px;
+    display: block;
+    border: 1px solid rgb(216, 216, 216);
+    background-color: rgb(158, 146, 131);
+    padding: 5px;
+    float: left;
+    margin: 10px 0 0 10px;
+    cursor: pointer;
+  }
+
+  .reservationCheck > a {
+    font-size: 18px;
+    color: beige;
+  }
+  .stationInfo {
+    max-width: 570px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .station {
+    display: block;
+  }
+  .station > li {
+  }
+  .showPay {
   }
 }
